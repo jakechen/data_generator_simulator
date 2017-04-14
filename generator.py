@@ -37,7 +37,7 @@ if __name__ == '__main__':
     parser.add_argument('source', help='s3 source file')
     parser.add_argument('tgt_bucket', help='s3 target bucket')
     parser.add_argument('tgt_key', help='s3 target key')
-    parser.add_argument('wait', help='time in seconds to wait between sending records')
+    parser.add_argument('wait', default=0, help='time in seconds to wait between sending records')
     args = parser.parse_args()
 
     generate(args.source, args.tgt_bucket, args.tgt_key, args.wait)
