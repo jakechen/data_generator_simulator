@@ -1,7 +1,9 @@
 import unittest
+import generator
 
-class TestStringMethods(unittest.TestCase):
-    pass
+class TestGenerator(unittest.TestCase):
+    
+    def test_
 
 if __name__ == '__main__':
     unittest.main()
