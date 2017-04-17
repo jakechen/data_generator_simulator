@@ -11,7 +11,7 @@ def generate(source, tgt_bucket, tgt_key, wait=0.0):
     f = open('./source', 'r')
     lines = [l.rstrip('\n') for l in f.readlines()]
     
-    if wait==0:
+    if float(wait)==0.0:
         record = random.choice(lines)
     
         s3 = boto3.resource('s3')
