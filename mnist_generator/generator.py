@@ -41,7 +41,7 @@ if __name__ == '__main__':
                         default='x_samples.csv', 
                         help='s3 target key')
     parser.add_argument('--wait', 
-                        type=int, 
+                        type=float, 
                         default=0, 
                         help='time in seconds to wait between sending records, 0 means only send once')
     parser.add_argument('--sample_size', 
